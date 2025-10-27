@@ -1,0 +1,233 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 6,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "Sp LucaOne Infer Embedding",
+      "pos": [
+        1080,
+        350
+      ],
+      "size": [
+        327.5999755859375,
+        274
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "input_file",
+          "name": "input_file",
+          "type": "PATH",
+          "link": 6
+        },
+        {
+          "name": "seq_type",
+          "type": "STRING",
+          "widget": {
+            "name": "seq_type"
+          },
+          "link": 3
+        },
+        {
+          "name": "id_idx",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "id_idx"
+          },
+          "link": 4
+        },
+        {
+          "name": "seq_idx",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seq_idx"
+          },
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "label": "save_path",
+          "name": "save_path",
+          "type": "PATH",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Sp LucaOne Infer Embedding",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "gene",
+        "matrix",
+        "right",
+        2048,
+        true,
+        false,
+        0,
+        1,
+        1024,
+        "mean"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Sp LucaOne Load Seq File",
+      "pos": [
+        690,
+        350
+      ],
+      "size": [
+        315,
+        268
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "seq_file_path",
+          "name": "seq_file_path",
+          "type": "PATH",
+          "links": [
+            6
+          ]
+        },
+        {
+          "label": "seq_type",
+          "name": "seq_type",
+          "type": "STRING",
+          "links": [
+            3
+          ]
+        },
+        {
+          "label": "id_idx",
+          "name": "id_idx",
+          "type": "INT",
+          "links": [
+            4
+          ]
+        },
+        {
+          "label": "seq_idx",
+          "name": "seq_idx",
+          "type": "INT",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "widget_ue_connectable": {},
+        "Node name for S&R": "Sp LucaOne Load Seq File"
+      },
+      "widgets_values": [
+        "_sp_auto_upload_MDFrN3lwMjZ2dnkxNTBqYzZmcnAzcG52YTQ_01k80p4vyse24fk8n177ax6576.fasta",
+        "gene",
+        "",
+        "",
+        0,
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Sp LucaOne Save Compressed Embedding",
+      "pos": [
+        1450,
+        350
+      ],
+      "size": [
+        453.5999755859375,
+        112
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "embedding_dir",
+          "name": "embedding_dir",
+          "type": "PATH",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Sp LucaOne Save Compressed Embedding",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "lucana/embedding",
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      3,
+      0,
+      "PATH"
+    ],
+    [
+      3,
+      4,
+      1,
+      2,
+      1,
+      "STRING"
+    ],
+    [
+      4,
+      4,
+      2,
+      2,
+      2,
+      "INT"
+    ],
+    [
+      5,
+      4,
+      3,
+      2,
+      3,
+      "INT"
+    ],
+    [
+      6,
+      4,
+      0,
+      2,
+      0,
+      "PATH"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.2839025177495011,
+      "offset": [
+        -289.05986474394166,
+        -165.5947958366713
+      ]
+    },
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "version": 0.4
+}
