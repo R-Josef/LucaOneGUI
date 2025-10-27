@@ -20,8 +20,9 @@
 
 ### 运行软件
 
-1. 请先将 Java 21 添加到 PATH, 或用绝对路径运行命令. 示例: `java -jar LucaOneGUI.jar`, `C:\Program Files\Java\jdk-21\bin\java.exe -jar LucaOneGUI.jar`, `/usr/lib/jvm/java-21-openjdk-amd64/java -jar LucaOneGUI.jar`
-2. 出现软件界面后, 请先点击 "设置" 按钮, 填写拥有 OSS 权限的Access Key 和 Access Secret Key, 然后点击 "保存" 按钮
+1. 下载软件: https://github.com/R-Josef/LucaOneGUI/releases
+2. 请先将 Java 21 添加到 PATH, 或用绝对路径运行命令. 示例: `java -jar LucaOneGUI.jar`, `C:\Program Files\Java\jdk-21\bin\java.exe -jar LucaOneGUI.jar`, `/usr/lib/jvm/java-21-openjdk-amd64/java -jar LucaOneGUI.jar`
+3. 出现软件界面后, 请先点击 "设置" 按钮, 填写拥有 OSS 权限的Access Key 和 Access Secret Key, 然后点击 "保存" 按钮
 
    | OSS Access Key        | 拥有 OSS 权限的Access Key                                                                                    |
    |-----------------------|---------------------------------------------------------------------------------------------------------|
@@ -34,9 +35,9 @@
    | Workflow ID           | 通过智作工坊-工作流管理界面获得https://eduplatform-sp.console.aliyun.com/comfyui-management                            |
    | Workflow Name         | 通过智作工坊-工作流管理界面获得 (需要先发布工作流并为一个版本命名别名)https://eduplatform-sp.console.aliyun.com/comfyui-management       |
 
-3. 转到 `提交` 页面, 填写参数, 选择 `.fasta` 文件并点击 `提交` 按钮
-4. 转到 `历史记录` 页面, 查看运行状态
-5. 嵌入结果将会在软件轮询到状态变为 "成功" 后自动下载至当前文件夹下.
+4. 转到 `提交` 页面, 填写参数, 选择 `.fasta` 文件并点击 `提交` 按钮
+5. 转到 `历史记录` 页面, 查看运行状态
+6. 嵌入结果将会在软件轮询到状态变为 "成功" 后自动下载至当前文件夹下.
 > ❗ 注意: 由于嵌入成功后, 结果并不会永久保存, 本软件并未设计关闭后重新恢复结果轮询. 嵌入时请勿关闭软件, 关闭将丢失进度.
 
 ## 注意事项
